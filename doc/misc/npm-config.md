@@ -155,6 +155,18 @@ even for `GET` requests.
 When "dev" or "development" and running local `npm shrinkwrap`,
 `npm outdated`, or `npm update`, is an alias for `--dev`.
 
+### archive
+
+* Default: true
+* Type: Boolean
+
+If false (with `--no-archive`), an existing `archived-packages/` directory
+will not be modified on save.
+
+This flag has no effect if the archive directory does not alredy exist.
+
+See also npm-archive(1).
+
 ### auth-type
 
 * Default: `'legacy'`
